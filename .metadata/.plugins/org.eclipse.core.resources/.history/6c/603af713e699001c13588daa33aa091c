@@ -1,0 +1,11 @@
+package io.SwapLastTwoChar;
+
+public class StringChecker {
+	public String SwapLast2char(String str)
+	{
+		char LastChar=str.charAt(1);
+		char SecondLastChar=str.charAt(0);
+		return ""+LastChar+SecondLastChar;
+	}
+
+}

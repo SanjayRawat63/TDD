@@ -1,0 +1,10 @@
+package io.plaindromechecker;
+
+public class PlaindromeChecker {
+         public boolean isPlaindrome(String str)
+         {
+        	 StringBuilder s=new StringBuilder(str);
+        	 String reverse=s.reverse().toString();
+        	 return reverse==str;
+         }
+}

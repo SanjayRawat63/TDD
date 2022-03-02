@@ -1,0 +1,14 @@
+package io.palindrome;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class testIsplaindrome {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

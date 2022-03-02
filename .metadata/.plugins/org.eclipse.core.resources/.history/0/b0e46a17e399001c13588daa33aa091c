@@ -1,0 +1,9 @@
+package io.SwapLastTwoChar;
+
+public class SwapLast2Char {
+	
+	public String SwapLast2Chars() {
+		return  "";
+	}
+
+}

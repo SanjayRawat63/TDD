@@ -1,0 +1,8 @@
+package io.plaindromechecker;
+
+public class PlaindromeChecker {
+         public boolean isPlaindrome(String str)
+         {
+        	 return true;
+         }
+}

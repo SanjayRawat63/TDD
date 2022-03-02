@@ -1,0 +1,23 @@
+package io.palindrome;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import io.plaindromechecker.PlaindromeChecker;
+
+class PlaindromeCheckerTest {
+
+	@Test
+	void testisPlaindrome() {
+		PlaindromeChecker pc=new PlaindromeChecker();
+		assertTrue(pc.isPlaindrome("mom mom"),()->"String is not a plaindrome");
+	}
+	@Test 
+	void testisPlaindrome1()
+	{
+		PlaindromeChecker pc=new PlaindromeChecker();
+		assertFalse(pc.isPlaindrome("sanjay"),()->"String is not a plaindrome");
+	}
+
+}

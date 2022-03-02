@@ -1,0 +1,15 @@
+package io.SwapLastTwoChar;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StringCheckerTest {
+
+	@Test
+	void testswap2charIsReverse() {
+		StringChecker s=new StringChecker();
+		assertEquals("BA",s.SwapLast2Chars("AB"),()->"Test fails");'
+	}
+
+}

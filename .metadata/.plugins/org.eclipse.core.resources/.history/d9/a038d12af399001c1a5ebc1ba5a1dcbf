@@ -1,0 +1,10 @@
+package io.plaindromechecker;
+
+public class PlaindromeChecker {
+         public boolean isPlaindrome(String str)
+         {
+        	 StringBuilder s=new StringBuilder(str.toLowerCase());
+        	 String reverse=s.reverse().toString().toLowerCase();
+        	 return reverse.equals(str);
+         }
+}

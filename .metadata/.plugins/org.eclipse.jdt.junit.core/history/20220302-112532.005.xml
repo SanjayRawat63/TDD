@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="New_configuration" project="PalindromeCheck" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="io.palindrome.PlaindromeCheckerTest" time="0.016" displayname="PlaindromeCheckerTest" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]">
+    <testcase name="testisPlaindrome" classname="io.palindrome.PlaindromeCheckerTest" time="0.016" displayname="testisPlaindrome()" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]/[method:testisPlaindrome()]"/>
+  </testsuite>
+</testrun>
