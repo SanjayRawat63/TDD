@@ -1,9 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Sanjay Rawat\Desktop\Interleap Training\4.TDD\TDD\.metadata\.plugins\org.eclipse.jdt.core
-4059228412.index
-3438778789.index
-113558702.index
-3107743774.index
-657555410.index
-340623286.index
-2901829282.index
-3965203294.index

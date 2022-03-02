@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PlaindromeCheckerTest.testisPlaindrome1" project="PalindromeCheck" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="io.palindrome.PlaindromeCheckerTest" time="0.0" displayname="PlaindromeCheckerTest" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]">
-    <testcase name="testisPlaindrome1" classname="io.palindrome.PlaindromeCheckerTest" time="0.0" displayname="testisPlaindrome1()" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]/[method:testisPlaindrome1()]"/>
-  </testsuite>
-</testrun>

@@ -1,9 +1,0 @@
-package io.SwapLastTwoChar;
-
-public class Snippet {
-	Write the test name using the requirements
-	Pretend that something called palindromeChecker exists and that it has an isAPalindrome method on it.
-	Expect the method to return true for mom.
-	Save
-}
-

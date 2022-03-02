@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="New_configuration" project="PalindromeCheck" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="io.palindrome.PlaindromeCheckerTest" time="0.015" displayname="PlaindromeCheckerTest" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]">
-    <testcase name="testisPlaindrome" classname="io.palindrome.PlaindromeCheckerTest" time="0.015" displayname="testisPlaindrome()" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]/[method:testisPlaindrome()]"/>
-    <testcase name="testisPlaindrome1" classname="io.palindrome.PlaindromeCheckerTest" time="0.0" displayname="testisPlaindrome1()" uniqueid="[engine:junit-jupiter]/[class:io.palindrome.PlaindromeCheckerTest]/[method:testisPlaindrome1()]"/>
-  </testsuite>
-</testrun>
