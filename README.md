@@ -3,4 +3,4 @@ Test Driven Development (TDD) is a software development practice that focuses on
 test cases before developing the actual code. It is an iterative approach that combines 
 programming, the creation of unit tests, and refactoring.
 The Process of using TDD is often described as Red/Green/Refractor.
-![alt text](https://github.com/SanjayRawat63/TDD/blob/master/https://miro.medium.com/max/875/1*pP8Ks6tlt718jJg3fqrtvw.jpeg?raw=true)
+![alt text](https://github.com/SanjayRawat63/TDD/blob/master/Tdd.jpeg?raw=true)
