@@ -6,8 +6,6 @@ public class PlaindromeChecker {
         	 str=str.replaceAll("\\s","").toLowerCase();
         	 StringBuilder s=new StringBuilder(str);
         	 String reverse=s.reverse().toString();
-        	 System.out.println(str);
-        	 System.out.println(reverse);
         	 return reverse.equals(str);
          }
 }

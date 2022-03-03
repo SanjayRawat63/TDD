@@ -15,28 +15,52 @@ class PlaindromeCheckerTest {
     {
     	pc=new PlaindromeChecker();
     }
+    @Test
+    @DisplayName("Checking for empty String")
+    void ShouldCheckforEmpty()
+    {
+    	assertTrue(pc.isPlaindrome(""));
+    }
+    @Test
+    @DisplayName("If one character and is in LowerCase")
+    void ShouldCheckForOneCharLowerCase()
+    {
+    	assertTrue(pc.isPlaindrome("a"));
+    }
+    @Test
+    @DisplayName("If one character and is in UpperCase")
+    void ShouldCheckForOneCharUpperCase()
+    {
+    	assertTrue(pc.isPlaindrome("A"));
+    }
 	@Test
-	@DisplayName("checking for one word in string")
-	void testisPlaindrome() {
-		assertTrue(pc.isPlaindrome("mom"),()->"String is not a plaindrome");
+	@DisplayName("checking for two character is in string")
+	void ShouldCheckforTwoChar() {
+		assertFalse(pc.isPlaindrome("mo"));
 	}
 	@Test 
-	@DisplayName("checking for one word in string")
-	void testisPlaindrome1()
+	@DisplayName("checking for Sanjay is not a palindrome")
+	void ShouldCheckForSanjay()
 	{
-		assertFalse(pc.isPlaindrome("sanjay"),()->"String is a plaindrome");
+		assertFalse(pc.isPlaindrome("sanjay"));
 	}
+	@Test
+	@DisplayName("mom is plaindrome")
+	    void ShouldCheckFormom()
+	    {
+	    	assertTrue(pc.isPlaindrome("mom"));
+	    }
 	@Test 
 	@DisplayName("checking for case sensitive  word in string")
-	void testisPlaindrome2()
+	void ShouldCheckforCaseSensitiveWord()
 	{
-		assertTrue(pc.isPlaindrome("Mom"),()->"String is not a plaindrome.");
+		assertTrue(pc.isPlaindrome("Mom"));
 	}
 	@Test 
-	@DisplayName("checking for more than one word with case senstive in string")
-	void testisPlaindrome3()
+	@DisplayName("checking for having whitespaces in string")
+	void ShouldCheckForStringWithSpace()
 	{
-		assertTrue(pc.isPlaindrome("Was It A Rat I Saw"),()->"String is not a plaindrome.");
+		assertTrue(pc.isPlaindrome("Was It A Rat I Saw"));
 	}
 
 }
