@@ -57,6 +57,12 @@ class PlaindromeCheckerTest {
 		assertTrue(pc.isPlaindrome("Mom"));
 	}
 	@Test 
+	@DisplayName("checking for case sensitive  Sentence")
+	void ShouldCheckforCaseSensitiveSentnce()
+	{
+		assertTrue(pc.isPlaindrome("helloolleh"));
+	}
+	@Test 
 	@DisplayName("checking for having whitespaces in string")
 	void ShouldCheckForStringWithSpace()
 	{
