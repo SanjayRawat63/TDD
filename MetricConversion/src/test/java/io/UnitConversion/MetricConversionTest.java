@@ -12,6 +12,7 @@ class MetricConversionTest {
     {
     	unit_conv=new Metric_Conversion();
     }
+    
 	@Nested
 	@DisplayName("Km to M Conversion Testing")
 	class Km_To_M{
@@ -35,14 +36,36 @@ class MetricConversionTest {
 	void testCheck_Km_to_M_ConforFloat() {
 		assertEquals(5000.00,unit_conv.km_to_m(5.00));
 	}
-	@Test
-	@DisplayName("Km to m conversion for String")
-	void testcheck_km_to_M_ConforString()
+	}
+	
+	@Nested
+	@DisplayName("km to M conversion testing for string")
+	class Km_to_MforString
 	{
-		double val=unit_conv.ParseString("40");
-		assertEquals(40000,unit_conv.km_to_m(val));
+		@Test
+		@DisplayName("Km to m conversion for empty String")
+		void testcheck_km_to_M_ConforEmptyString()
+		{
+			double val=unit_conv.ParseString("");
+			assertEquals(0000,unit_conv.km_to_m(val));
+		}
+		@Test
+		@DisplayName("Km to m conversion for String having whitespaces")
+		void testcheck_km_to_M_ConforWhiteSpacesString()
+		{
+			double val=unit_conv.ParseString("20 .00");
+			assertEquals(20000,unit_conv.km_to_m(val));
+		}
+		@Test
+		@DisplayName("Km to m conversion for having alphabet String")
+		void testcheck_km_to_M_ConforString()
+		{
+			double val=unit_conv.ParseString("4yfy0z.00");
+			assertEquals(40000,unit_conv.km_to_m(val));
+		}
+		
 	}
-	}
+	
 	@Nested
 	@DisplayName("M to Km Conversion Testing")
 	class M_To_KM{

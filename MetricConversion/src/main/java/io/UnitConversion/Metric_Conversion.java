@@ -4,7 +4,8 @@ public class Metric_Conversion {
 	
 	public double ParseString(String str)
 	{
-		return Double.parseDouble(str);
+		str=str.replaceAll("[a-zA-Z\\s]","");
+		return (str==null|| str.isEmpty()) ? 0 : Double.parseDouble(str);
 	}
 	public double km_to_m(double value)
 	{
