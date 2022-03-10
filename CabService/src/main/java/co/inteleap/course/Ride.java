@@ -17,5 +17,5 @@ public class Ride {
 	{
 		return FARE_PER_KM * Distance + FARE_PER_MINUTE* Time;
 	}
-
+	
 }

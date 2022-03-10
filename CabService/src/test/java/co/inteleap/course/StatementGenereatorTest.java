@@ -12,35 +12,39 @@ class StatementGenereatorTest {
 
 	@Test
 	public void shouldCalculateCostForAGivenTime() {
-		StatementGenerator statementgenerator=new StatementGenerator();
 		List<Ride> rides= Collections.singletonList(new Ride(0,1));
-		double totalfare=statementgenerator.create(rides);
-		assertEquals(1,totalfare);
+		Statement statement=new Statement(rides);
+		assertEquals(1,statement.getTotalFare());
+		assertEquals(1,statement.getNumberOfRides());
+		assertEquals(1,statement.getAvgFarePerRide());
 	}
 	
 	@Test
 	public void shouldCalculateCostForAGivenDistance() {
-		StatementGenerator statementgenerator=new StatementGenerator();
 		List<Ride> rides= Collections.singletonList(new Ride(1,0));
-		double totalfare=statementgenerator.create(rides);
-		assertEquals(10,totalfare);
+		Statement statement=new Statement(rides);
+		assertEquals(10,statement.getTotalFare());
+		assertEquals(1,statement.getNumberOfRides());
+		assertEquals(10,statement.getAvgFarePerRide());
 	}
 	
 	@Test
 	public void shouldCaculateCostForDistanceAndTime() {
-		StatementGenerator statementgenerator=new StatementGenerator();
 		List<Ride> rides= Collections.singletonList(new Ride(1,1));
-		double totalfare=statementgenerator.create(rides);
-		assertEquals(11,totalfare);
+		Statement statement=new Statement(rides);
+		assertEquals(11,statement.getTotalFare());
+		assertEquals(1,statement.getNumberOfRides());
+		assertEquals(11,statement.getAvgFarePerRide());
 	}
 	
 	@Test
 	public void shouldCalculateForMultipleJourneyTotalFareForGivenTimeAndDistance()
 	{
-		StatementGenerator statementgenerator=new StatementGenerator();
 		List<Ride> rides= Arrays.asList(new Ride(1,1),new Ride(2,3));
-		double totalfare=statementgenerator.create(rides);
-		assertEquals(34,totalfare);	
+		Statement statement=new Statement(rides);
+		assertEquals(34,statement.getTotalFare());	
+		assertEquals(2,statement.getNumberOfRides());
+		assertEquals(17,statement.getAvgFarePerRide());
 	}
 
 }
