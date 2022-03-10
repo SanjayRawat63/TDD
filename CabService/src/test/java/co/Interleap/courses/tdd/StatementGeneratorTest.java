@@ -10,6 +10,6 @@ class StatementGeneratorTest {
 	void shouldCalculateCostForAGivenTime() {
 		assertEquals(1,new StatementGenerator().TotalCost(0,1));
 	}	
-	}
+	
 
 }
