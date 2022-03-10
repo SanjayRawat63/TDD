@@ -13,7 +13,11 @@ class StatementGeneratorTest {
 	
 	@Test
 	void shouldCalculateCostForAGivenDistance() {
+<<<<<<< HEAD
 		assertEquals(10,new StatementGenerator().TotalCost(1,0));
+=======
+		assertEquals(10,new StatementGenerator().TotalCost(10,0));
+>>>>>>> 9b2312f2bc194cc1fe15a7ee66cf3718f65cae3c
 	}
 	
 
