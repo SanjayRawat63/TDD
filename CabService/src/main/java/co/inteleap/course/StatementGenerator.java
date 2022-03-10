@@ -8,8 +8,10 @@ public class StatementGenerator {
 	
 	public double create(List<Ride> rides)
 	{
-		Ride ride=rides.get(0);
-		return FARE_PER_KM * ride.getDistance() + FARE_PER_MINUTE *ride.getTime();
+		double fare=0;
+		for(Ride ride: rides)
+		    fare+= FARE_PER_KM * ride.getDistance() + FARE_PER_MINUTE *ride.getTime();
+	   return fare;
 	}
 	
 }
