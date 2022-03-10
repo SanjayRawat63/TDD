@@ -3,7 +3,7 @@ package co.inteleap.course;
 public class StatementGenerator {
 	public double TotalFare(double Distance,double Time)
 	{
-		return 1;
+		return 10;
 	}
 
 }
