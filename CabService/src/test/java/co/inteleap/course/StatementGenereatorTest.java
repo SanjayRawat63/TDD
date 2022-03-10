@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 class StatementGenereatorTest {
 
 	@Test
-	public void test() {
-		
+	public void shouldCalculateCostForAGivenTime() {
+		assertEquals(1,StatementGenerator().TotalFare(0,1));
 	}
 
 }
