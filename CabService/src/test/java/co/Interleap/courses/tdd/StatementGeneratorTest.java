@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 class StatementGeneratorTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
-		
+	void shouldCalculateCostForAGivenTime() {
+		assertEquals(1,new StatementGenerator().TotalCost(0,1));
+	}	
 	}
 
 }
