@@ -1,12 +1,15 @@
 package co.inteleap.course;
 
-public class StatementGenerator {
-	public static final int FAIR_PER_KM=10;
-	public static final int FAIR_PER_MINUTE=1;
-	
-	public double TotalFare(double Distance,double Time)
-	{
-		return FAIR_PER_KM * Distance + FAIR_PER_MINUTE * Time;
-	}
+import java.util.List;
 
+public class StatementGenerator {
+	public static final int FARE_PER_KM=10;
+	public static final int FARE_PER_MINUTE=1;
+	
+	public double create(List<Ride> rides)
+	{
+		Ride ride=rides.get(0);
+		return FARE_PER_KM * ride.getDistance() + FARE_PER_MINUTE *ride.getTime();
+	}
+	
 }

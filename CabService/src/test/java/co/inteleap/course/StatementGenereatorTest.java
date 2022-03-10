@@ -2,23 +2,36 @@ package co.inteleap.course;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
+import java.util.Collections;
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 
 class StatementGenereatorTest {
 
 	@Test
 	public void shouldCalculateCostForAGivenTime() {
-		assertEquals(1,new StatementGenerator().TotalFare(0,1));
+		StatementGenerator statementgenerator=new StatementGenerator();
+		List<Ride> rides= Collections.singletonList(new Ride(0,1));
+		double totalfare=statementgenerator.create(rides);
+		assertEquals(1,totalfare);
 	}
 	
 	@Test
 	public void shouldCalculateCostForAGivenDistance() {
-		assertEquals(10,new StatementGenerator().TotalFare(1,0));
+		StatementGenerator statementgenerator=new StatementGenerator();
+		List<Ride> rides= Collections.singletonList(new Ride(1,0));
+		double totalfare=statementgenerator.create(rides);
+		assertEquals(10,totalfare);
 	}
 	
 	@Test
 	public void shouldCaculateCostForDistanceAndTime() {
-		assertEquals(11,new StatementGenerator().TotalFare(1,1));
+		StatementGenerator statementgenerator=new StatementGenerator();
+		List<Ride> rides= Collections.singletonList(new Ride(1,1));
+		double totalfare=statementgenerator.create(rides);
+		assertEquals(11,totalfare);
 	}
 
 }
