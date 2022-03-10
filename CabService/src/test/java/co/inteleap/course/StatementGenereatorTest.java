@@ -8,7 +8,7 @@ class StatementGenereatorTest {
 
 	@Test
 	public void shouldCalculateCostForAGivenTime() {
-		assertEquals(1,StatementGenerator().TotalFare(0,1));
+		assertEquals(1,new StatementGenerator().TotalFare(0,1));
 	}
 
 }
