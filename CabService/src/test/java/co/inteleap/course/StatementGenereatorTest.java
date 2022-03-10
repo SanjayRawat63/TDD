@@ -15,5 +15,10 @@ class StatementGenereatorTest {
 	public void shouldCalculateCostForAGivenDistance() {
 		assertEquals(10,new StatementGenerator().TotalFare(1,0));
 	}
+	
+	@Test
+	public void shouldCaculateCostForDistanceAndTime() {
+		assertEquals(11,new StatementGenerator().TotalFare(1,1));
+	}
 
 }
