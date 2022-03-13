@@ -11,14 +11,16 @@ class MetricConversionTest {
 	public void ShouldConvertINCHToM()
 	{
 		Metric_Conversion metric_conversion= new Metric_Conversion();
-		double converted_value=metric_conversion.INCH_TO_M(100.0);
-		assertEquals(2.54,converted_value);
+		UnitConverter unitconverter=new UnitConverter("in","m",1);
+		double converted_value=metric_conversion.Unit_Converter(unitconverter);
+		assertEquals(0.0254,converted_value);
 	}
 	@Test
 	public void ShouldConvertMToINCH()
 	{
 		Metric_Conversion metric_conversion= new Metric_Conversion();
-		double converted_value=metric_conversion.M_TO_INCH(0.0254);
+		UnitConverter unitconverter=new UnitConverter("m","in",0.0254);
+		double converted_value=metric_conversion.Unit_Converter(unitconverter);
 		assertEquals(1,converted_value);
 	}
 	
@@ -26,14 +28,16 @@ class MetricConversionTest {
 	public void ShouldConvertKMToM()
 	{
 		Metric_Conversion metric_conversion= new Metric_Conversion();
-		double converted_value=metric_conversion.KM_TO_M(1);
+		UnitConverter unitconverter=new UnitConverter("km","m",1);
+		double converted_value=metric_conversion.Unit_Converter(unitconverter);
 		assertEquals(1000,converted_value);
 	}
 	@Test
 	public void ShouldConvertMToKM()
 	{
 		Metric_Conversion metric_conversion= new Metric_Conversion();
-		double converted_value=metric_conversion.M_TO_KM(1000);
+		UnitConverter unitconverter=new UnitConverter("m","km",1000);
+		double converted_value=metric_conversion.Unit_Converter(unitconverter);
 		assertEquals(1,converted_value);
 	}
 }
