@@ -11,10 +11,9 @@ public class Statement {
     }
 
     public double getTotalFare() {
-        double totalfare =
-                rides.stream().map(ride -> ride.getTotalFare()).
-                        reduce(0.0D, Double::sum);
-        return totalfare;
+
+        return rides.stream().map(ride -> ride.getTotalFare()).
+                reduce(0.0D, Double::sum);
     }
 
     public int getNumberOfRides() {
