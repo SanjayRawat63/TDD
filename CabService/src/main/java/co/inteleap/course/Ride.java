@@ -14,8 +14,8 @@ public class Ride {
         this.Time = time;
     }
 
-    public Supplier<Double> getTotalFare =
-            () -> FARE_PER_KM * Distance + FARE_PER_MINUTE * Time;
-
+    public Double getTotalFare() {
+        return FARE_PER_KM * Distance + FARE_PER_MINUTE * Time;
+    }
 
 }
