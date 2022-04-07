@@ -1,10 +1,6 @@
 package co.inteleap.course;
 
 import java.util.List;
-import java.util.function.Function;
-import java.util.function.Supplier;
-import java.util.function.ToIntFunction;
-import java.util.stream.Collectors;
 
 public class Statement {
 
@@ -14,22 +10,21 @@ public class Statement {
         this.rides = rides;
     }
 
-    public double getTotalFare()
-    {
-        double totalfare=0;
-        for(Ride ride:rides)
-            totalfare+= ride.getTotalFare.get();
-
+    public double getTotalFare() {
+        double totalfare =
+                rides.stream().map(ride -> ride.getTotalFare()).
+                        reduce(0.0D, Double::sum);
         return totalfare;
     }
 
+    public int getNumberOfRides() {
+        return rides.size();
+    }
 
-    public Supplier<Integer> getNumberOfRides =
-            () -> rides.size();
 
-    public Supplier<Double> getAvgFarePerRide =
-            () -> getTotalFare() / getNumberOfRides.get();
-
+    public double getAvgFarePerRide() {
+        return getTotalFare() / getNumberOfRides();
+    }
 
 }
 
